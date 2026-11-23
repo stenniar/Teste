@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Site Chama</title>
+<meta name="description" content="A Chama é um núcleo de comunicação e tecnologia em vendas: filmes, conteúdo, marketing, CRM, automação com IA e sites que transformam atenção em vendas. Natal/RN.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Chama — Comunicação e Tecnologia em Vendas">
+<meta property="og:description" content="Do primeiro frame ao fechamento da venda: audiovisual, marketing e tecnologia comercial num só núcleo.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preload" href="fonts/StretchPro.otf" as="font" type="font/otf" crossorigin>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="pular" href="#sobre">Pular para o conteúdo</a>
+
+<!-- ============ BARRA FIXA (aparece ao rolar) ============ -->
+<header class="barra" id="barra" aria-label="Navegação">
+  <a class="barra-logo" href="#topo" aria-label="Chama — início"><img src="img/logo-chama.svg" alt="Chama" width="120" height="38"></a>
+  <nav class="barra-links" aria-label="Menu principal (fixo)">
+    <a href="#sobre" data-secao="sobre">sobre nós</a>
+    <a href="#servicos" data-secao="servicos" class="abre-mega" aria-haspopup="true" aria-expanded="false" aria-controls="mega">soluções<svg class="seta-mega" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="#projetos" data-secao="projetos">portfólio</a>
+    <a href="#contato" data-secao="contato">contato</a>
+  </nav>
+  <a class="barra-cta" href="#contato" data-assunto="Quero conversar sobre um projeto">Vamos conversar</a>
+  <button class="barra-menu" type="button" aria-expanded="false" aria-controls="menu-cel">menu</button>
+  <span class="barra-progresso" id="progresso" aria-hidden="true"></span>
+</header>
+
+<!-- ============ MEGA MENU DE SOLUÇÕES ============ -->
+<div class="mega" id="mega" role="region" aria-label="Soluções da Chama" hidden>
+  <div class="mega-intro">
+    <p class="mega-kicker">Núcleo de comunicação<br>e tecnologia em vendas</p>
+    <p class="mega-tit">Do roteiro<br>ao <em>fechamento</em><br>da venda.</p>
+    <p class="mega-txt">Três frentes que trabalham juntas: a gente cria a história, leva até as pessoas certas e organiza o caminho até o “sim”.</p>
+    <a class="mega-cta" href="#contato" data-assunto="Quero um diagnóstico da minha comunicação e vendas">Pedir um diagnóstico <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="mega-col" style="--i:0">
+    <a class="mega-pilar" href="#pilar-audiovisual"><span class="n">01</span>Audiovisual<br>&amp; Conteúdo</a>
+    <ul>
+      <li><a href="#pilar-audiovisual" data-serv="s1"><img src="img/icone-01.png" alt="" loading="lazy"><span><b>Filmes publicitários</b><small>Campanhas com produção de alto nível</small></span></a></li>
+      <li><a href="#pilar-audiovisual" data-serv="s2"><img src="img/icone-02.png" alt="" loading="lazy"><span><b>Conteúdo para profissionais</b><small>Médicos, advogados, consultores…</small></span></a></li>
+      <li><a href="#pilar-audiovisual" data-serv="s3"><img src="img/icone-03.png" alt="" loading="lazy"><span><b>Documentários e autorais</b><small>Linguagem cinematográfica</small></span></a></li>
+      <li><a href="#pilar-audiovisual" data-serv="s4"><img src="img/icone-04.png" alt="" loading="lazy"><span><b>Projetos especiais</b><small>Eventos, museus, shows, ativações</small></span></a></li>
+    </ul>
+  </div>
+
+  <div class="mega-col" style="--i:1">
+    <a class="mega-pilar" href="#pilar-marketing"><span class="n">02</span>Marketing<br>&amp; Marca</a>
+    <ul>
+      <li><a href="#pilar-marketing" data-serv="s5"><img src="img/icone-05.png" alt="" loading="lazy"><span><b>Gestão de redes sociais</b><small>Planejamento, criação e publicação</small></span></a></li>
+      <li><a href="#pilar-marketing" data-serv="s6"><img src="img/icone-06.png" alt="" loading="lazy"><span><b>Tráfego pago</b><small>Meta, TikTok e YouTube Ads</small></span></a></li>
+      <li><a href="#pilar-marketing" data-serv="s7"><img src="img/icone-07.png" alt="" loading="lazy"><span><b>Identidade visual</b><small>Logomarca, branding e manual</small></span></a></li>
+      <li><a href="#pilar-marketing" data-serv="s8"><img src="img/icone-08.png" alt="" loading="lazy"><span><b>Produção gráfica</b><small>Materiais físicos sob medida</small></span></a></li>
+    </ul>
+  </div>
+
+  <div class="mega-col novo" style="--i:2">
+    <a class="mega-pilar" href="#pilar-tecnologia"><span class="n">03</span>Tecnologia<br>em Vendas <i class="selo">nova era</i></a>
+    <ul>
+      <li><a href="#pilar-tecnologia" data-serv="s9"><img src="img/icone-09.svg" alt="" loading="lazy"><span><b>CRM e funil de vendas</b><small>Cada contato vira oportunidade</small></span></a></li>
+      <li><a href="#pilar-tecnologia" data-serv="s10"><img src="img/icone-10.svg" alt="" loading="lazy"><span><b>Automação e IA</b><small>Atendimento 24h no WhatsApp</small></span></a></li>
+      <li><a href="#pilar-tecnologia" data-serv="s11"><img src="img/icone-11.svg" alt="" loading="lazy"><span><b>Sites e landing pages</b><small>Páginas feitas para converter</small></span></a></li>
+      <li><a href="#pilar-tecnologia" data-serv="s12"><img src="img/icone-12.svg" alt="" loading="lazy"><span><b>Dados e performance</b><small>Painéis de vendas e ROI</small></span></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ 01 · TOPO ============ -->
+<section class="s topo" id="topo" style="--h:1440">
+  <a class="logo" href="#topo" aria-label="Chama — início"><img src="img/logo-chama.svg" alt="Chama"></a>
+
+  <nav class="menu" aria-label="Menu principal">
+    <a href="#sobre"     data-x="769"  data-y="214">sobre nós</a>
+    <a href="#servicos"  data-x="1010" data-y="214" class="abre-mega" aria-haspopup="true" aria-expanded="false" aria-controls="mega">soluções<svg class="seta-mega" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="#projetos"  data-x="1250" data-y="214">portfólio</a>
+    <a href="#contato"   data-x="1460" data-y="214">contato</a>
+  </nav>
+  <button class="menu-cel" type="button" id="abrir-menu" aria-expanded="false" aria-controls="menu-cel">menu</button>
+
+  <div class="idiomas" aria-label="Idiomas">
+    <img src="img/bandeiras.png" alt="">
+    <a href="#en" aria-label="English"></a><a href="#pt" aria-label="Português"></a>
+    <a href="#es" aria-label="Español"></a><a href="#ru" aria-label="Русский"></a>
+  </div>
+
+  <h1 class="titulo" id="titulo" aria-label="Produzir está no nosso DNA!">
+    <span data-x="131"  data-y="624"  data-fs="184.5">Produzir</span>
+    <span data-x="745"  data-y="803"  data-fs="184.5">Est<i class="agudo">a</i></span>
+    <span data-x="1475" data-y="845"  data-fs="97">no</span>
+    <span data-x="445"  data-y="995"  data-fs="184.5">Nos&zwnj;sso</span>
+    <span data-x="1119" data-y="1171" data-fs="184.5">DNA!</span>
+  </h1>
+  <p class="slogan"><span>Núcleo de comunicação</span> <span>e tecnologia em vendas</span></p>
+  <canvas id="rosto" aria-hidden="true"></canvas>
+</section>
+
+<!-- ============ MENU DO CELULAR ============ -->
+<div class="menu-cel-painel" id="menu-cel" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="mc-topo">
+    <img src="img/logo-chama.svg" alt="Chama" class="mc-logo">
+    <button type="button" class="fechar-menu" id="fechar-menu" aria-label="Fechar menu">×</button>
+  </div>
+  <nav class="mc-links">
+    <a href="#sobre" style="--i:0">sobre nós</a>
+    <details style="--i:1">
+      <summary>soluções</summary>
+      <div class="mc-pilares">
+        <a href="#pilar-audiovisual"><span class="n">01</span>Audiovisual &amp; Conteúdo<small>Filmes · Conteúdo · Documentários · Projetos especiais</small></a>
+        <a href="#pilar-marketing"><span class="n">02</span>Marketing &amp; Marca<small>Redes sociais · Tráfego pago · Identidade · Gráfica</small></a>
+        <a href="#pilar-tecnologia" class="novo"><span class="n">03</span>Tecnologia em Vendas<small>CRM · Automação e IA · Sites · Dados</small></a>
+      </div>
+    </details>
+    <a href="#projetos" style="--i:2">portfólio</a>
+    <a href="#contato" style="--i:3">contato</a>
+  </nav>
+  <div class="mc-rodape">
+    <a class="mc-whats" href="https://wa.me/5584991191874" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    <a class="mc-insta" href="https://instagram.com/chamacine" target="_blank" rel="noopener">@chamacine</a>
+  </div>
+</div>
+
+<!-- ============ 02 · SOBRE NÓS + DIRETORES ============ -->
+<section class="s sobre" id="sobre" style="--h:1780">
+  <img class="a deco fogo" src="img/fogo.png" alt="" style="--x:1238;--y:193;--w:400" loading="lazy">
+  <h2 class="a t tit" data-x="135" data-y="246">Sobre nós</h2>
+  <p class="a t corpo" data-x="130" data-y="346" style="--w:1080">A Chama é um núcleo de comunicação e tecnologia em vendas.<br class="d"> Unimos linguagem cinematográfica, estratégia e ferramentas<br class="d"> digitais para atrair, engajar e converter: do primeiro frame<br class="d"> ao fechamento da venda, com propósito em cada etapa.</p>
+
+  <h2 class="a t tit" data-x="134" data-y="684">Nossos diretores</h2>
+  <div class="diretores">
+    <figure class="dir">
+      <img class="a foto" src="img/diretor-costa.png" alt="Costa" style="--x:87;--y:784;--w:371" loading="lazy">
+      <figcaption class="a t nome" data-cx="255.5" data-y="1273"><b>Costa</b><br>Diretor Geral</figcaption>
+    </figure>
+    <figure class="dir">
+      <img class="a foto" src="img/diretor-george.png" alt="George" style="--x:498;--y:800;--w:384" loading="lazy">
+      <figcaption class="a t nome" data-cx="629.5" data-y="1273"><b>George</b><br>Diretor Executivo</figcaption>
+    </figure>
+    <figure class="dir">
+      <img class="a foto" src="img/diretor-ernani.png" alt="Ernani" style="--x:867;--y:814;--w:389" loading="lazy">
+      <figcaption class="a t nome" data-cx="1034.5" data-y="1273"><b>Ernani</b><br>Diretor de Cena</figcaption>
+    </figure>
+    <figure class="dir">
+      <img class="a foto" src="img/diretor-patricia.png" alt="Patrícia" style="--x:1246;--y:779;--w:419" loading="lazy">
+      <figcaption class="a t nome" data-cx="1413.5" data-y="1266"><b>Patrícia</b><br>Coordenadora<br>de Produção</figcaption>
+    </figure>
+  </div>
+  <img class="a deco silhuetas" src="img/silhuetas.png" alt="" style="--x:657;--y:1455;--w:957" loading="lazy">
+  <img class="a deco dino" src="img/dinossauro.png" alt="" style="--x:1595;--y:1150;--w:460" loading="lazy">
+</section>
+
+<!-- ============ 03 · SOLUÇÕES (3 pilares) ============ -->
+<section class="s servicos" id="servicos" style="--h:1760">
+  <h2 class="a t tit claro grande" data-x="135" data-y="159">Soluções</h2>
+  <p class="a t corpo claro" data-x="131" data-y="250">Da câmera ao CRM: combinamos linguagem<br class="d"> cinematográfica, marketing e tecnologia para criar<br class="d"> conteúdos que emocionam, conectam e vendem.</p>
+  <div class="grade-servicos">
+    <p class="a t pilar" id="pilar-audiovisual" data-x="135" data-y="436" style="--w:1650"><span class="n">01</span>Audiovisual &amp; Conteúdo</p>
+    <div class="serv" id="s1"><img class="a ico" src="img/icone-01.png" alt="" style="--x:234;--y:492;--w:126" loading="lazy"><div class="a t serv-txt" data-x="130" data-y="626"><h3>Filmes<br class="d"> Publicitários</h3><p>Vídeos para campanhas que<br class="d"> combinam criatividade com<br class="d"> uma produção de alto nível.</p></div></div>
+    <div class="serv" id="s2"><img class="a ico" src="img/icone-02.png" alt="" style="--x:525;--y:496;--w:118" loading="lazy"><div class="a t serv-txt" data-x="521" data-y="632"><h3>Conteúdo para<br class="d"> Profissionais</h3><p>Médicos, advogados, arquitetos,<br class="d"> influenciadores, professores,<br class="d"> consultores...</p></div></div>
+    <div class="serv" id="s3"><img class="a ico" src="img/icone-03.png" alt="" style="--x:968;--y:532;--w:121" loading="lazy"><div class="a t serv-txt" data-x="945" data-y="653"><h3>Documentários<br class="d"> e Projetos Autorais</h3><p>Produções com sensibilidade<br class="d"> e linguagem cinematográfica.</p></div></div>
+    <div class="serv" id="s4"><img class="a ico" src="img/icone-04.png" alt="" style="--x:1439;--y:514;--w:134" loading="lazy"><div class="a t serv-txt" data-x="1348" data-y="662"><h3>Projetos Especiais</h3><p>Eventos, ativações, exposições,<br class="d"> museus, shows e experiências que<br class="d"> pedem um conteúdo sob medida.</p></div></div>
+
+    <p class="a t pilar" id="pilar-marketing" data-x="135" data-y="826" style="--w:1650"><span class="n">02</span>Marketing &amp; Marca</p>
+    <div class="serv" id="s5"><img class="a ico" src="img/icone-05.png" alt="" style="--x:153;--y:876;--w:94" loading="lazy"><div class="a t serv-txt" data-x="131" data-y="1024"><h3>Gestão de<br class="d"> Redes Sociais</h3><p>Planejamento, criação de<br class="d"> conteúdo e publicações<br class="d"> com propósito.</p></div></div>
+    <div class="serv" id="s6"><img class="a ico" src="img/icone-06.png" alt="" style="--x:506;--y:880;--w:140" loading="lazy"><div class="a t serv-txt" data-x="467" data-y="1023"><h3>Tráfego Pago</h3><p>Impulsionamento eficiente no<br class="d"> Instagram, Facebook, TikTok<br class="d"> e YouTube, para ampliar o seu<br class="d"> alcance, engajamento e conversões.</p></div></div>
+    <div class="serv" id="s7"><img class="a ico" src="img/icone-07.png" alt="" style="--x:992;--y:900;--w:110" loading="lazy"><div class="a t serv-txt" data-x="928" data-y="1044"><h3>Identidade Visual</h3><p>Criação de logomarcas,<br class="d"> Branding, manual de marca<br class="d"> e aplicações estratégicas.</p></div></div>
+    <div class="serv" id="s8"><img class="a ico" src="img/icone-08.png" alt="" style="--x:1444;--y:895;--w:114" loading="lazy"><div class="a t serv-txt" data-x="1338" data-y="1043"><h3>Produção Gráfica</h3><p>Apoio completo na produção<br class="d"> de materiais físicos com<br class="d"> fornecedores de confiança.</p></div></div>
+
+    <p class="a t pilar novo" id="pilar-tecnologia" data-x="135" data-y="1232" style="--w:1650"><span class="n">03</span>Tecnologia em Vendas <i class="selo">nova era</i></p>
+    <div class="serv" id="s9"><img class="a ico" src="img/icone-09.svg" alt="" style="--x:150;--y:1290;--w:130" loading="lazy"><div class="a t serv-txt" data-x="131" data-y="1432"><h3>CRM e Funil<br class="d"> de Vendas</h3><p>Implantação de CRM, funil<br class="d"> e follow-up: nenhum contato<br class="d"> fica sem resposta.</p></div></div>
+    <div class="serv" id="s10"><img class="a ico" src="img/icone-10.svg" alt="" style="--x:500;--y:1290;--w:134" loading="lazy"><div class="a t serv-txt" data-x="467" data-y="1432"><h3>Automação e IA<br class="d"> no Atendimento</h3><p>Assistentes inteligentes no<br class="d"> WhatsApp e no site, que respondem,<br class="d"> qualificam e agendam 24h.</p></div></div>
+    <div class="serv" id="s11"><img class="a ico" src="img/icone-11.svg" alt="" style="--x:975;--y:1290;--w:134" loading="lazy"><div class="a t serv-txt" data-x="928" data-y="1432"><h3>Sites e<br class="d"> Landing Pages</h3><p>Páginas rápidas, bonitas e<br class="d"> feitas para converter, ligadas<br class="d"> ao tráfego e ao CRM.</p></div></div>
+    <div class="serv" id="s12"><img class="a ico" src="img/icone-12.svg" alt="" style="--x:1432;--y:1290;--w:134" loading="lazy"><div class="a t serv-txt" data-x="1338" data-y="1432"><h3>Dados e<br class="d"> Performance</h3><p>Painéis de vendas, métricas<br class="d"> e ROI de cada campanha para<br class="d"> decidir com clareza.</p></div></div>
+  </div>
+</section>
+
+<!-- ============ 04 · NOSSOS PROJETOS (roda de pôsteres) ============ -->
+<section class="s recentes" id="projetos" style="--h:1260" aria-labelledby="titulo-projetos">
+  <h2 class="a t tit" id="titulo-projetos" data-x="134" data-y="227">Nossos projetos</h2>
+  <div class="a t dica" id="dica" data-x="136" data-y="312">Arraste, role para o lado ou use as setas</div>
+
+  <div class="a info" id="info" aria-live="polite" style="--x:134;--y:470;--w:640">
+    <div class="contador" id="info-num">01 / 12</div>
+    <div class="tipo" id="info-tipo"></div>
+    <h3 id="info-titulo"></h3>
+    <p id="info-resumo"></p>
+    <div class="acoes">
+      <button type="button" class="btn-ficha" id="ver-ficha">Ver ficha do projeto</button>
+      <button type="button" class="btn-seta" id="anterior" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-seta" id="proximo" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+
+  <div class="a roda" id="roda" style="--x:0;--y:0;--w:1920" data-cx="1360" data-cy="700" data-h="1040">
+    <div class="sombra-chao" aria-hidden="true"></div>
+    <canvas id="palco" aria-label="Roda de pôsteres dos projetos" role="img"></canvas>
+  </div>
+  <ul class="lista-oculta" id="lista"></ul>
+</section>
+
+<!-- ============ 05 · CONTATO ============ -->
+<section class="s contato" id="contato" style="--h:840">
+  <h2 class="chamada" aria-label="Vamos produzir juntos?">
+    <span class="a t c1" data-x="96"  data-y="119">Vaamos</span>
+    <span class="a t c2" data-x="242" data-y="204">produzir</span>
+    <span class="a t c3" data-x="187" data-y="280">junntos<span class="q">?</span></span>
+  </h2>
+  <ul class="infos">
+    <li class="a t info-l" data-x="208" data-y="424"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg><a href="https://wa.me/5584991191874" target="_blank" rel="noopener">(84) 9119-1874</a></li>
+    <li class="a t info-l" data-x="208" data-y="478"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v.4l-10 6.2L2 6.4V6a1 1 0 0 1 1-1Zm-1 3.7 9.5 5.9a1 1 0 0 0 1 0L22 8.7V18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.7Z"/></svg><a href="mailto:contato@chamacine.com.br">contato@chamacine.com.br</a></li>
+    <li class="a t info-l" data-x="208" data-y="532"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg><a href="https://instagram.com/chamacine" target="_blank" rel="noopener">chamacine</a></li>
+  </ul>
+  <address class="a t endereco" data-x="250" data-y="620">Centro Empresarial Oliveira<br>Rua José Ribeiro Dantas, 275<br>Sala 107 | Lagoa Nova — Natal/RN</address>
+
+  <form class="a form" id="form" style="--x:1066;--y:154;--w:669" novalidate>
+    <label class="campo"><span>Nome</span><input id="f-nome" name="nome" autocomplete="name" required></label>
+    <label class="campo"><span>Email</span><input id="f-email" name="email" type="email" autocomplete="email" required></label>
+    <label class="campo"><span>Assunto</span><input id="f-assunto" name="assunto"></label>
+    <label class="campo area"><span>Mensagem</span><textarea id="f-msg" name="mensagem" rows="5" required></textarea></label>
+    <button type="submit" class="enviar">Enviar pelo WhatsApp</button>
+    <p class="aviso" id="aviso" role="status"></p>
+  </form>
+</section>
+
+<!-- ============ 06 · RODAPÉ ============ -->
+<footer class="s rodape" style="--h:100">
+  <p>Copyright © 2026. Chama · Comunicação e Tecnologia em Vendas <img src="img/logo-rodape.png" alt="Chama" loading="lazy"></p>
+</footer>
+
+<!-- Janela do projeto -->
+<dialog id="janela" aria-labelledby="j-titulo">
+  <button class="fechar" type="button" id="fechar" aria-label="Fechar">×</button>
+  <div class="janela">
+    <img id="j-poster" alt="">
+    <div>
+      <h3 id="j-titulo"></h3>
+      <p id="j-resumo"></p>
+      <dl>
+        <dt>Gênero</dt><dd id="j-genero"></dd>
+        <dt>Formato</dt><dd id="j-formato"></dd>
+        <dt>Locação</dt><dd id="j-local"></dd>
+        <dt>Direção</dt><dd id="j-direcao"></dd>
+        <dt>Classificação</dt><dd id="j-class"></dd>
+      </dl>
+    </div>
+  </div>
+</dialog>
+
+<script src="projetos.js"></script>
+<script src="site.js"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script src="olhar/poses.js"></script>
+<script type="module" src="topo-olhar.js"></script>
+<script type="module" src="roda.js"></script>
+</body>
+</html>
