@@ -44,7 +44,7 @@ br.d { display: inline; }
 .dir { margin: 0; }
 .infos { list-style: none; }
 
-.sobre     { background-image: url("img/fundo-sobre.jpg"); }
+.sobre     { background-image: url("img/fundo-sobre.jpg"); background-position: center bottom; }
 /* Soluções: o fundo original fica no alto, o rasgo de transição no pé e o meio continua no mesmo cinza */
 .servicos  {
   background: url("img/fundo-servicos-rasgo.jpg") center bottom / 100% auto no-repeat,
